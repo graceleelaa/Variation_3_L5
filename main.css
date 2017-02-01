@@ -20,7 +20,7 @@
   min-width: 1000px;
 }
 .stage:hover .ball {
-  animation: slide 3s ease-in-out 1s infinite alternate;
+  animation: slide 1s ease-in-out 1s infinite alternate;
 }
 .stage:active .ball {
   animation-play-state: paused;
