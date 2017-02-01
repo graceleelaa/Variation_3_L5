@@ -5,16 +5,9 @@
 body{
 
 	background:yellow;
-	font-family: serif;
+
 }
 
-.talking-head{
-	font-weight: 700;
-	font-size: 3em;
-	text-decoration: underline;
-	width: 25%;
-	padding: 20px;
-}
 
 .main{	
 	width: 90%;
@@ -24,36 +17,7 @@ body{
 	z-index: -1;
 }
 
-.main-2{
-	position: absolute;
-	top:300px;
-	right: 100px;
-	height: 100%;
-	opacity: 0.5;
-	z-index: 100;
-}
 
-.main-3{
-	position: absolute;
-	top:330px;
-	right: 142px;
-	height: 100%;
-	opacity: 0.2;
-	z-index: 100;
-}
-
-.square{
-	transition:width 2s ease;
-	width: 100px;
-	height: 100px;
-	background: #0000ff;
-	float: left;
-	margin: 15px;
-}
-
-.square:hover{
-	width: 300px;
-}
 
 .circle{
 	transition: background 2s ease;
@@ -71,30 +35,33 @@ body{
 	background: #ff0000;
 }
 
-.circle-outline{
-	transition: width 1s ease, 
-				height 1s ease, 
-				-moz-border-radius 1s ease
-				-webkit-border-radius 1s ease
-				border-radius 1s ease;
-	width: 100px;
-	height: 100px;
-	border: 3px dotted #0000ff;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
-	float: left;
-	margin: 15px;
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 244px;
+    top: 100px;
+  }
+  100% {
+    left: 488px;
+    top: 0;
+  }
 }
-
-.circle-outline:hover{
-	width: 200px;
-	height: 200px;
-	-moz-border-radius: 100px;
-	-webkit-border-radius: 100px;
-	border-radius: 100px;
-	float: left;
-	margin: 15px;
+.stage {
+  height: 150px;
+  position: relative;
 }
-
+.ball {
+    height: 50px;
+    position: absolute;
+    width: 50px;
+}
+.stage:hover .ball {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+}
 
