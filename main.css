@@ -9,31 +9,6 @@ body{
 }
 
 
-.main{	
-	width: 90%;
-	height: 500px;
-	margin: 100px auto;	
-	overflow: auto;
-	z-index: -1;
-}
-
- 
-
-.circle{
-	transition: background 2s ease;
-	width: 100px;
-	height: 100px;
-	background: #0000ff;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
-	float: left;
-	margin: 15px;
-}
-
-.circle:hover{
-	background: #ff0000;
-}
 
 @keyframes slide {
   0% {
