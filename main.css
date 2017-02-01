@@ -4,31 +4,31 @@
     top: 0;
   }
   50% {
-    left: 244px;
-    top: 100px;
+    left: 122px;
+    top: 50px;
   }
   100% {
-    left: 488px;
+    left: 244px;
     top: 0;
   }
 }
 .stage {
-  background: #eaeaed;
-  border-radius: 6px;
-  height: 150px;
+  background: pink;
+  border-radius: 2px;
+  height: 100px;
   position: relative;
   min-width: 538px;
 }
 .stage:hover .ball {
-  animation: slide 2s ease-in-out .5s infinite alternate;
+  animation: slide 3s ease-in-out 1s infinite alternate;
 }
 .stage:active .ball {
   animation-play-state: paused;
 }
 .ball {
-  background: #2db34a;
+  background: black;
   border-radius: 50%;
-  height: 50px;
+  height: 100px;
   position: absolute;
-  width: 50px;
+  width: 100px;
 }
